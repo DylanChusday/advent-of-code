@@ -9,7 +9,6 @@ with open('day1input1.txt') as file:
         else:
             elfList.append(s)
 
-
 elfSum = 0
 sumList =[]
 for x in elfList:
@@ -19,15 +18,12 @@ for x in elfList:
         sumList.append(elfSum)
         elfSum = 0
 
-
 highestSum = 0
 for x in sumList:
     if (x > highestSum):
         highestSum = x
 
 print(highestSum)
-
-
 threeHighest = []
 for i in range(3):
     highestSum = 0
@@ -40,4 +36,3 @@ for i in range(3):
 print(threeHighest)
 threeSum = sum(threeHighest)
 print(threeSum)  
-    
